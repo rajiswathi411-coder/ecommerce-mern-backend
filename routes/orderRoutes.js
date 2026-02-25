@@ -5,6 +5,6 @@ import { protect } from "../middleware/authMiddleware.js";
 const router = express.Router();
 
 router.post("/", protect, addOrderItems);
-router.get("/myorders", protect, getMyOrders);
+router.get("/myOrders", protect, getMyOrders);
 
 export default router;
